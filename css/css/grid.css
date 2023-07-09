@@ -1,0 +1,54 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 130px;
+    /* grid-template-rows: 1fr 1fr 1fr */
+}
+.item{
+    background-color: purple;
+    margin: 10px;
+    padding-left: 30px;
+    padding-top: 40px; 
+    /* padding: auto; */
+    color: white;
+}
+
+
+
+
+/* setup box positons */
+.positions{
+    display: grid;
+    /* grid-template-columns: repeat(3, 420px); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* គម្លាតចន្លោះ column and rows*/
+}
+.box{
+    /* background-color: green;
+    width: 200px;
+    height: 200px; can't use w and h in grid*/
+    color: black;
+    padding: 30px;
+}
+.a{
+    grid-column: 1 / span 2;
+    /* start from column 1 to 2 */
+    background: lightcoral;
+}
+.b{
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    background: peachpuff;
+}
+.c{
+    grid-column: 2;
+    grid-row: 2;
+    background: palegoldenrod;
+}
+.d{
+    grid-column: 1;
+    grid-row: 2;
+    background: plum;
+}
+
